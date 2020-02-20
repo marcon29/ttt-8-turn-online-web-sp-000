@@ -39,7 +39,7 @@ def turn
 
 	good_move = false
 	until good_move == true
-		puts "Where would you like to go? (enter 1-9)"
+		puts "Please enter 1-9:"
 		user_input = gets.strip
 		good_move = valid_move?(board, input_to_index(user_input))
 	end
