@@ -47,4 +47,3 @@ def turn
 	move(board, input_to_index(user_input))
 	display_board(board)
 end
-
