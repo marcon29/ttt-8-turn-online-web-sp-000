@@ -11,3 +11,6 @@ until good_move == true
   user_input = gets.strip
   good_move = valid_move?(board, input_to_index(user_input))
 end
+
+move(board, input_to_index(user_input))
+display_board(board)
