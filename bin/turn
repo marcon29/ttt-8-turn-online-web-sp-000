@@ -1,16 +1,4 @@
 #!/usr/bin/env ruby
 require_relative '../lib/turn'
 
-puts "Welcome to Tic Tac Toe!"
-board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-display_board(board)
-
-good_move = false
-until good_move == true
-  puts "Where would you like to go? (enter 1-9)"
-  user_input = gets.strip
-  good_move = valid_move?(board, input_to_index(user_input))
-end
-
-move(board, input_to_index(user_input))
-display_board(board)
+turn
